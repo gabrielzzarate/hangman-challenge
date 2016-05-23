@@ -8,9 +8,9 @@ var Backbone = require('backbone');
 var _ = require('underscore');
 
 //local
-var Welcome = require('./components/welcome.jsx');
-var GamePlay = require('./components/gameplay.jsx');
-var GameOver = require('./components/gameover.jsx');
+var Welcome = require('./welcome.jsx');
+var GamePlay = require('./gameplay.jsx');
+var GameOver = require('./gameover.jsx');
 
 
 var Interface = React.createClass({
