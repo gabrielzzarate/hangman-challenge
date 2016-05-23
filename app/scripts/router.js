@@ -6,8 +6,7 @@ var ReactDOM = require('react-dom');
 
 
 var Interface = require("./components/Interface.jsx").Interface;
-
-
+var appContainer = document.getElementById('app');
 
 
 var Router = Backbone.Router.extend({
