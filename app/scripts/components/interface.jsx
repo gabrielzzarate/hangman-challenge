@@ -57,9 +57,9 @@ var Interface = React.createClass({
 				<div className="app-content">
 					<div className="row body-container">
 
-					<div id="main-container" style={style} className="animated fadeIn col-lg-12 col-sm-9 col-xs-9 col-xs-12">
+					<div id="main-container" style={style} className="animated fadeIn container">
 
-						<div id="body-container" className="col-xs-12 ">
+						<div id="body-container" className="">
 
 						{body}
 						</div>

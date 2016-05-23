@@ -8,7 +8,9 @@ var React = require('react');
 var GamePlay = React.createClass({
 	render: function() {
 		return (
-			<div />
+			<div className="gameplay-container col-sm-12">
+
+			</div>
 		);
 	}
 

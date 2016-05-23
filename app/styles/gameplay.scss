@@ -1,0 +1,15 @@
+
+
+//colors
+$primary-background-color: rgb(59, 67, 99);
+$gameplay-white: rgb(245, 245, 245);
+$rectangle-gray: rgb(245, 245, 245);
+$light-blue: rgb(77, 113, 251);
+$new-word-yellow: rgb(255, 185, 0);
+
+
+.gameplay-container {
+	background-color: $gameplay-white;
+	height: 330px;
+	border-radius: 8px;
+}

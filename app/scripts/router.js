@@ -19,15 +19,7 @@ var Router = Backbone.Router.extend({
 
 	},
 
-	login: function(){
-		ReactDOM.unmountComponentAtNode(appContainer);
-		ReactDOM.render(
-			React.createElement(Login, {router: self}),
-			appContainer
-		);
 
-		this._appMounted = false;
-	},
 	mainApp: function(route) {
 		var self = this;
 		self.current = route;

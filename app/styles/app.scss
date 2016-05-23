@@ -5,6 +5,18 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
+//child stylesheets
+@import "welcome";
+@import "gameplay";
+@import "gameover";
+
+//colors
+$primary-background-color: rgb(59, 67, 99);
+$gameplay-white: rgb(245, 245, 245);
+$rectangle-gray: rgb(245, 245, 245);
+$light-blue: rgb(77, 113, 251);
+$new-word-yellow: rgb(255, 185, 0);
+
 
 *,
 *::before,
@@ -22,7 +34,7 @@ img {
 
 body {
 
-  background-color: rgb(59, 67, 99);
+  background-color: $primary-background-color;
   background-size: cover;
   color: rgba (11, 28, 84, 0.88);
   margin: 0;
