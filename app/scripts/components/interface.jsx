@@ -13,6 +13,14 @@ var GamePlay = require('./gameplay.jsx');
 var GameOver = require('./gameover.jsx');
 
 
+//models
+var WordsModel = require('./models/words.js');
+
+//instances
+var WordsCollection = new WordsModel.WordCollection();
+var Words = new WordsModel.Words();
+
+
 var Interface = React.createClass({
 	componentWillMount: function() {
 		this.callback =(function(){
@@ -33,7 +41,7 @@ var Interface = React.createClass({
 				} else if(this.props.router.current == 'game'){
 					body = (
 						// game screen
-						<GamePlay />
+						<GamePlay model={Words} collection={WordsCollection} />
 						);
 
 			} else if (this.props.router.current == 'gameover'){

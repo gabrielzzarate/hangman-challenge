@@ -22,6 +22,7 @@ var WordCollection = Backbone.Collection.extend({
 });
 
 
+
 module.exports = {
 	'Word': Word,
 	'WordCollection': WordCollection

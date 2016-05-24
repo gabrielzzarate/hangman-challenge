@@ -8,6 +8,12 @@ var ReactDOM = require('react-dom');
 var Interface = require("./components/Interface.jsx").Interface;
 var appContainer = document.getElementById('app');
 
+//models
+var WordsModel = require('./models/words.js');
+
+//instances
+var Words = new WordsModel.WordCollection();
+
 
 var Router = Backbone.Router.extend({
 	_appMounted: false,
