@@ -10,6 +10,12 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import "gameplay";
 @import "gameover";
 
+//font
+@font-face {
+    font-family: AllerDisplay;
+    src: local('AllerDisplay.ttf');
+}
+
 //colors
 $primary-background-color: rgb(59, 67, 99);
 $gameplay-white: rgb(245, 245, 245);
@@ -33,7 +39,7 @@ img {
 
 
 body {
-
+	font-family: AllerDisplay;
   background-color: $primary-background-color;
   background-size: cover;
   color: rgba (11, 28, 84, 0.88);

@@ -7,7 +7,9 @@ var Backbone = require('backbone');
 require('backbone-react-component');
 
 //local
-var Hangman = require('hangman.jsx');
+var Hangman = require('./hangman.jsx');
+var LettersMissed = require('./lettersmissed.jsx');
+var WordBlock = require('./wordblock.jsx');
 var Word = require('../models/words').Word;
 var WordCollection = require('../models/words').WordCollection;
 
@@ -30,7 +32,20 @@ var GamePlay = React.createClass({
 	render: function() {
 		return (
 			<div className="gameplay-container col-sm-12">
-			<Hangman />
+			<div className="row">
+					<div className="col-sm-4">
+						<Hangman />
+					</div>
+					<div className="col-sm-6">
+						<LettersMissed />
+					</div>
+			</div>
+			<div className="row">
+				<div className="col-sm-10 col-sm-offset-1">
+					<WordBlock />
+				</div>
+			</div>
+
 
 
 			</div>
