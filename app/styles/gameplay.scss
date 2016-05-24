@@ -12,35 +12,68 @@ $new-word-yellow: rgb(255, 185, 0);
 	padding: 0px;
 	margin: 60px;
 	background-color: $gameplay-white;
-	height: 330px;
+	height: 500px;
 	border-radius: 8px;
 }
 
 .hangman-container {
 	padding: 0px;
-	margin-top: 30px;
+	margin-top: 40px;
 
 
 
 	.head,  {
-		height: 80px;
+		height: 120px;
 		float: right;
 		position: relative;
-		right: -16px;
+		right: -30px;
 		top: -1px;
+		z-index: 2;
 	}
 	.neck {
-		height: 30px;
+		height: 40px;
 		float: right;
-		position: absolute;
-
-		z-index: -0.5;
+		position: relative;
+		bottom: -100px;
+		right: -98px;
+		z-index: 1;
 	}
-
 		.corpus {
 			float: right;
 			height: 120px;
+			position: relative;
+			bottom: -130px;
+			right: -150px;
+			z-index: 2;
 		}
+	.left-arm {
+		height: 80px;
+		float: right;
+		position: relative;
+		left: -34px;
+		bottom: -10px;
+		z-index: 2;
+	}
+	.left-hand {
+		height: 25px;
+		float: right;
+		position: relative;
+		bottom: -190px;
+		right: -120px;
+		z-index: 1;
+
+
+
+
+	}
+	.right-arm {
+			height: 80px;
+		float: right;
+		position: relative;
+		right: -150px;
+		bottom: -10px;
+	}
+
 
 
 

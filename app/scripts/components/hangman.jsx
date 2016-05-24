@@ -19,6 +19,9 @@ var Hangman = React.createClass({
 
 					<img src="images/neck.png" className="neck"/>
 					<img src="images/corpus.png" className="corpus" />
+					<img src="images/left-arm.png" className="left-arm" />
+					<img src="images/left-hand.png" className="left-hand" />
+					<img src="images/right-arm.png" className="right-arm" />
 
 				</div>
 			</div>

@@ -14,11 +14,12 @@ var GameOver = require('./gameover.jsx');
 
 
 //models
-var WordsModel = require('./models/words.js');
+var WordsModel = require('../models/words.js');
 
 //instances
-var WordsCollection = new WordsModel.WordCollection();
-var Words = new WordsModel.Words();
+var WordCollection = new WordsModel.WordCollection();
+
+var Words = new WordsModel.Word();
 
 
 var Interface = React.createClass({
@@ -32,6 +33,7 @@ var Interface = React.createClass({
 		this.props.router.off('route', this.callback);
 	},
 	render: function() {
+
 		var body;
 			if(this.props.router.current == 'welcome'){
 				body = (
@@ -41,7 +43,7 @@ var Interface = React.createClass({
 				} else if(this.props.router.current == 'game'){
 					body = (
 						// game screen
-						<GamePlay model={Words} collection={WordsCollection} />
+						<GamePlay model={Words} collection={WordCollection} />
 						);
 
 			} else if (this.props.router.current == 'gameover'){
